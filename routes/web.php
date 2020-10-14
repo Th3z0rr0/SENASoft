@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\admin\AdminController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +20,8 @@ Route::get('/', function () {
 });
 Route::get('acercade',[LandingController::class,'acercade'])->name('landing.acercade');
 Route::get('servicios',[LandingController::class,'servicios'])->name('landing.servicios');
+
+
+Route::get('index',[AdminController::class,'index'])->name('Admin.index');
+Route::get('Create',[AdminController::class,'create'])->name('Admin.create');
+

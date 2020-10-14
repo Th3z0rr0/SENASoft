@@ -1,0 +1,22 @@
+<------------------------------vendedor----------------------------------->
+generar factura (vende)
+generar reportes
+cambiar estado facturas
+solicitudes entre empleados general y especifico
+
+
+<------------------------------operario----------------------------------->
+crud de productos
+solicitudes entre empleados general y especifico
+
+
+<------------------------------Empresas (admin)----------------------------------->
+crud de usuarios
+crud de sucursales
+solicitudes entre empleados general y especifico
+crud de sucursales y bodegas 
+
+
+
+<------------------------------Siigo (admin supremo)----------------------------------->
+crud de empresas
