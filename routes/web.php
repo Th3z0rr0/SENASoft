@@ -2,9 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
-use App\Http\Controllers\VendorController;
 use App\Http\Controllers\admin\AdminController;
-use App\Http\Controllers\Operator\OperatorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,13 +23,6 @@ Route::get('servicios',[LandingController::class,'servicios'])->name('landing.se
 
 
 Route::get('index',[AdminController::class,'index'])->name('Admin.index');
+Route::get('view',[AdminController::class,'view'])->name('Admin.view');
 Route::get('Create',[AdminController::class,'create'])->name('Admin.create');
 
-Route::get('generarventas',[VendorController::class,'generarventas'])->name('landing.generarventas');
-Route::get('generarfactura',[VendorController::class,'generarfactura'])->name('landing.generarfactura');
-Route::get('detallesfactura',[VendorController::class,'detallesfactura'])->name('landing.detallesfactura');
-
-
-
-
-Route::get('Operator',[OperatorController::class,'index'])->name('Operator.index');
