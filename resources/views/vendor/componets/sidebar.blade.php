@@ -13,6 +13,18 @@
                 <i class="c-sidebar-nav-icon fas fa-desktop"></i>
                 Dashboard<span class="badge badge-info">NEW</span></a></li>
 
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{ route('landing.generarventas')}}">
+
+            <i class="c-sidebar-nav-icon fas fa-wine-bottle"></i>
+             
+             Generar Ventas <span class="badge badge-info"></span></a></li>
+             <li class="c-sidebar-nav-item t"><a class="c-sidebar-nav-link" href="{{ route('landing.generarfactura')}}">
+             <i class="c-sidebar-nav-icon fas fa-print"></i>
+             Consultar Facturas <span class="badge badge-info"></span></a></li>
+             <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="">
+             <i class="c-sidebar-nav-icon fas fa-boottle fas fa-crutch"></i>
+             Consultar Productos <span class="badge badge-info"></span></a></li>
+
 
         <li class="c-sidebar-nav-dropdown"><a class="c-sidebar-nav-dropdown-toggle" href="#">
                 <svg class="c-sidebar-nav-icon">

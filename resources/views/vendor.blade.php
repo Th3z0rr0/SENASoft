@@ -21,13 +21,13 @@
         gtag('config', 'UA-118965717-1');
     </script></head>
 <body class="c-app">
-@include('layouts.users.components.sidebar')
+@include('vendor.componets.sidebar')
 
-@include('layouts.users.components.aside')
+@include('vendor.componets.aside')
 
 
 <div class="c-wrapper">
-    @include('layouts.users.components.navbar')
+    @include('vendor.componets.navbar')
     <div class="c-body">
         <main class="c-main">
             <div class="container-fluid">
@@ -38,7 +38,7 @@
             </div>
         </main>
     </div>
-    @include('layouts.users.components.footer')
+    @include('vendor.componets.footer')
 </div>
 
 <script src="{{ url('js/app.js') }}"></script>
