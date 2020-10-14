@@ -27,3 +27,5 @@ Route::get('index',[AdminController::class,'index'])->name('Admin.index');
 Route::get('Create',[AdminController::class,'create'])->name('Admin.create');
 
 Route::get('Operator',[OperatorController::class,'index'])->name('Operator.index');
+Route::get('NewProduct',[LandingController::class,'newproduct'])->name('landing.newproduct');
+Route::get('EditProduct',[LandingController::class,'editproduct'])->name('landing.editproduct');
