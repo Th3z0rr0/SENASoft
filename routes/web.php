@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\admin\AdminController;
+use App\Http\Controllers\Operator\OperatorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,4 @@ Route::get('servicios',[LandingController::class,'servicios'])->name('landing.se
 Route::get('index',[AdminController::class,'index'])->name('Admin.index');
 Route::get('Create',[AdminController::class,'create'])->name('Admin.create');
 
+Route::get('Operator',[OperatorController::class,'index'])->name('Operator.index');
