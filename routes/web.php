@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\VendorController;
 use App\Http\Controllers\admin\AdminController;
+use App\Http\Controllers\Operator\OperatorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,3 +34,4 @@ Route::get('detallesfactura',[VendorController::class,'detallesfactura'])->name(
 
 
 
+Route::get('Operator',[OperatorController::class,'index'])->name('Operator.index');
