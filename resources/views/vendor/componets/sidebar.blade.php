@@ -21,7 +21,7 @@
              <li class="c-sidebar-nav-item t"><a class="c-sidebar-nav-link" href="{{ route('landing.generarfactura')}}">
              <i class="c-sidebar-nav-icon fas fa-print"></i>
              Consultar Facturas <span class="badge badge-info"></span></a></li>
-             <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="">
+             <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{route('landing.productos')}}">
              <i class="c-sidebar-nav-icon fas fa-boottle fas fa-crutch"></i>
              Consultar Productos <span class="badge badge-info"></span></a></li>
 

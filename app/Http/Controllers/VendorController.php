@@ -15,5 +15,10 @@ class VendorController extends Controller
     public function detallesfactura(){
         return view('modules.landing.detallesfactura');
     }
-    
+    public function productos(){
+        return view('modules.landing.productos');
+    }
+    public function ingreso(){
+        return view('landing.generarventas');
+    }
 }

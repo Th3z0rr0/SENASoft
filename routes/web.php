@@ -30,7 +30,8 @@ Route::get('Create',[AdminController::class,'create'])->name('Admin.create');
 Route::get('generarventas',[VendorController::class,'generarventas'])->name('landing.generarventas');
 Route::get('generarfactura',[VendorController::class,'generarfactura'])->name('landing.generarfactura');
 Route::get('detallesfactura',[VendorController::class,'detallesfactura'])->name('landing.detallesfactura');
-
+Route::get('productos',[VendorController::class,'productos'])->name('landing.productos');
+Route::post('productos',[VendorController::class,'ingreso'])->name('recordar');
 
 
 

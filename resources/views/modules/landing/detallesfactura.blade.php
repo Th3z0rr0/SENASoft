@@ -8,40 +8,55 @@
     <div class="card">
     <div class="card-header"><strong>Venta</strong> <small>Form</small></div>
     <div class="card-body">
+
+
+
         <div class="row">
             <div class="form-group col-sm-6">
-            <label for="Producto;">Producto: </label>
-            <label name="Producto;"></label>
+            <label for="idfactura;">Id Factura: </label>
+            <label name="idfactura;"></label>
             </div>
             <div class="form-group col-sm-6">
-            <label for="Cantidad">Cantidad</label>
-            <label name="Cantidad;"></label>
+            <label for="idproducto">Id Producto</label>
+            <label name="idproducto"></label>
             </div>
-            </div> <div class="row">
+            </div>
+        <div class="row">
+            
+            <div class="form-group col-sm-6">
+            <label for="idcliente">Id Cliente: </label>
+            <label name="idcliente"></label>
+            </div>
+            <div class="form-group col-sm-6">
+            <label for="Producto">Producto</label>
+            <label name="producto"></label>
+            </div>
+            </div>
+             <div class="row">
                 <div class="form-group col-sm-6">
-                <label for="Fecha">Fecha</label>
-                <label name="Fecha"></label>
+                <label for="cliente">Cliente</label>
+                <label name="cliente"></label>
 
                 </div>
                 <div class="form-group col-sm-6">
-                <label for="Precio unidad">Precio unidad</label>
-                <label name="Precio unidad"></label>
+                <label for="cantidad">Cantidad</label>
+                <label name="cantidad"></label>
                 </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-sm-6">
-                    <label for="idfatura">N° Factura</label>
-                    <label name="idfactura"></label>
+                    <label for="fecha">Fecha</label>
+                    <label name="fecha"></label>
                     </div>
                     <div class="form-group col-sm-6">
-                    <label for="idcliente">N° Cliente</label>
-                    <label name="idcliente"></label>
+                    <label for="preunidad">Pre. Unidad</label>
+                    <label name="preunidad"></label>
                     </div>
                     </div>
                 <div class="row">
                     <div class="form-group col-sm-6">
-                    <label for="Cliente">Cliente</label>
-                    <label name="Cliente"></label>
+                    <label for="Ciudad">Ciudad</label>
+                    <label name="Ciudad"></label>
                     </div>
                     <div class="form-group col-sm-6">
                     <label for="IVA">IVA</label>
@@ -57,7 +72,7 @@
     <label for="total">Total</label>
 <label name="total"></label>    </div>
     <div class="form-group col-sm-12">
-        <input type="submit" class="btn btn-success float-right"value="ENVIAR">
+        <input type="submit" class="btn btn-success float-right"value="Descargar PDF">
         </div>
     </div>
 </div>
