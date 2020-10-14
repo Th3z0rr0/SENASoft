@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\LandingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('acercade',[LandingController::class,'acercade'])->name('landing.acercade');
+Route::get('servicios',[LandingController::class,'servicios'])->name('landing.servicios');

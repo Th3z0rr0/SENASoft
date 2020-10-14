@@ -11,7 +11,18 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+/*mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
-    ]);
+    ]);*/
+
+
+mix.styles(
+    [
+      'resources/coreui/css/coreui.css'
+    ],'public/css/app.css')
+    .scripts(
+        [
+        'resources/coreui/js/coreui.bundle.min.js',
+        'resources/coreui/js/svgxuse.min.js',
+        ],'public/js/app.js');
