@@ -13,6 +13,7 @@
     <title>CoreUI Pro Bootstrap Admin Template</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="{{ url('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url('css/dataTables.bootstrap4.min.css') }}"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -21,13 +22,13 @@
         gtag('config', 'UA-118965717-1');
     </script></head>
 <body class="c-app">
-@include('layouts.users.components.sidebar')
+@include('layouts.users_admin.components.sidebar')
 
-@include('layouts.users.components.aside')
+@include('layouts.users_admin.components.aside')
 
 
 <div class="c-wrapper">
-    @include('layouts.users.components.navbar')
+    @include('layouts.users_admin.components.navbar')
     <div class="c-body">
         <main class="c-main">
             <div class="container-fluid">
@@ -38,10 +39,10 @@
             </div>
         </main>
     </div>
-    @include('layouts.users.components.footer')
+    @include('layouts.users_admin.components.footer')
 </div>
 
 <script src="{{ url('js/app.js') }}"></script>
-
+<script type="text/javascript" src="{{ url('js/dataTables.bootstrap4.min.js') }}"></script>
 </body>
 </html>
