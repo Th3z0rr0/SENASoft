@@ -1,9 +1,7 @@
 
 <div class="c-sidebar c-sidebar-lg c-sidebar-light c-sidebar-right c-sidebar-overlaid" id="aside">
     <button class="c-sidebar-close c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-show" responsive="true">
-        <svg class="c-icon">
-            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-x"></use>
-        </svg>
+        <i class="c-icon fas fa-times"></i>
     </button>
     <ul class="nav nav-tabs nav-underline nav-underline-primary" role="tablist">
         <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#timeline" role="tab">

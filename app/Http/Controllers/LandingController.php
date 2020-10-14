@@ -12,5 +12,11 @@ class LandingController extends Controller
     public function servicios(){
         return view('modules.landing.servicios');
     }
+    public function newproduct(){
+        return view('modules.landing.newproduct');
+    }
+    public function editproduct(){
+        return view('modules.landing.editproduct');
+    }
 
 }

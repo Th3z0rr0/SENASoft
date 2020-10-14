@@ -13,6 +13,7 @@
     <title>CoreUI Pro Bootstrap Admin Template</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="{{ url('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url('css/dataTables.bootstrap4.min.css') }}"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -42,6 +43,6 @@
 </div>
 
 <script src="{{ url('js/app.js') }}"></script>
-
+<script type="text/javascript" src="{{ url('js/dataTables.bootstrap4.min.js') }}"></script>
 </body>
 </html>

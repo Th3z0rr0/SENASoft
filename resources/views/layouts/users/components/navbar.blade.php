@@ -1,16 +1,12 @@
 <header class="c-header c-header-light c-header-fixed">
     <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
-        <svg class="c-icon c-icon-lg">
-            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-menu"></use>
-        </svg>
+            <i class="c-icon c-icon-lg fas fa-bars text-info"></i>
     </button><a class="c-header-brand d-lg-none c-header-brand-sm-up-center" href="#">
         <svg width="118" height="46" alt="CoreUI Logo">
             <use xlink:href="assets/brand/coreui-pro.svg#full"></use>
         </svg></a>
     <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
-        <svg class="c-icon c-icon-lg">
-            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-menu"></use>
-        </svg>
+        <i class="c-icon c-icon-lg fas fa-bars text-info"></i>
     </button>
     <ul class="c-header-nav d-md-down-none">
         <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Dashboard</a></li>
@@ -19,21 +15,15 @@
     </ul>
     <ul class="c-header-nav mfs-auto">
         <li class="c-header-nav-item px-3 c-d-legacy-none">
-            <button class="c-class-toggler c-header-nav-btn" type="button" id="header-tooltip" data-target="body" data-class="c-dark-theme" data-toggle="c-tooltip" data-placement="bottom" title="Toggle Light/Dark Mode">
-                <svg class="c-icon c-d-dark-none">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-moon"></use>
-                </svg>
-                <svg class="c-icon c-d-default-none">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-sun"></use>
-                </svg>
+            <button class="c-class-toggler c-class-toggler c-header-nav-btn" type="button" id="header-tooltip" data-target="body" data-class="c-dark-theme" data-toggle="c-tooltip" data-placement="bottom" title="Toggle Light/Dark Mode">
+                    <i class="fas fa-moon"></i>
             </button>
         </li>
     </ul>
     <ul class="c-header-nav">
         <li class="c-header-nav-item dropdown d-md-down-none mx-2"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <svg class="c-icon">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
-                </svg><span class="badge badge-pill badge-danger">5</span></a>
+                <i class="c-icon fas fa-bell"></i>
+                    <span class="badge badge-pill badge-danger">5</span></a>
             <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0">
                 <div class="dropdown-header bg-light"><strong>You have 5 notifications</strong></div><a class="dropdown-item" href="#">
                     <svg class="c-icon mfe-2 text-success">
@@ -67,37 +57,9 @@
             </div>
         </li>
         <li class="c-header-nav-item dropdown d-md-down-none mx-2"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <svg class="c-icon">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-list-rich"></use>
-                </svg><span class="badge badge-pill badge-warning">15</span></a>
-            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0">
-                <div class="dropdown-header bg-light"><strong>You have 5 pending tasks</strong></div><a class="dropdown-item d-block" href="#">
-                    <div class="small mb-1">Upgrade NPM &amp; Bower<span class="float-right"><strong>0%</strong></span></div><span class="progress progress-xs">
-<div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-</span>
-                </a><a class="dropdown-item d-block" href="#">
-                    <div class="small mb-1">ReactJS Version<span class="float-right"><strong>25%</strong></span></div><span class="progress progress-xs">
-<div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-</span>
-                </a><a class="dropdown-item d-block" href="#">
-                    <div class="small mb-1">VueJS Version<span class="float-right"><strong>50%</strong></span></div><span class="progress progress-xs">
-<div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-</span>
-                </a><a class="dropdown-item d-block" href="#">
-                    <div class="small mb-1">Add new layouts<span class="float-right"><strong>75%</strong></span></div><span class="progress progress-xs">
-<div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-</span>
-                </a><a class="dropdown-item d-block" href="#">
-                    <div class="small mb-1">Angular 8 Version<span class="float-right"><strong>100%</strong></span></div><span class="progress progress-xs">
-<div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-</span>
-                </a><a class="dropdown-item text-center border-top" href="#"><strong>View all tasks</strong></a>
-            </div>
-        </li>
-        <li class="c-header-nav-item dropdown d-md-down-none mx-2"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <svg class="c-icon">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
-                </svg><span class="badge badge-pill badge-info">7</span></a>
+            
+            <i class="c-sidebar-nav-icon fas fa-envelope"></i>
+            <span class="badge badge-pill badge-info">7</span></a>
             <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg pt-0">
                 <div class="dropdown-header bg-light"><strong>You have 4 messages</strong></div><a class="dropdown-item" href="#">
                     <div class="message">
@@ -138,8 +100,12 @@
                 </a><a class="dropdown-item text-center border-top" href="#"><strong>View all messages</strong></a>
             </div>
         </li>
-        <li class="c-header-nav-item dropdown"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+        <li class="c-header-nav-item dropdown">
+            <a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <div class="c-avatar">
+                
+                <img class="c-avatar-img" src="url('public/assets/img/user.jpg')" alt="user@email.com">
+                </div>
             </a>
             <div class="dropdown-menu dropdown-menu-right pt-0">
                 <div class="dropdown-header bg-light py-2"><strong>Account</strong></div><a class="dropdown-item" href="#">
@@ -177,29 +143,8 @@
                     </svg> Logout</a>
             </div>
         </li>
-        <button class="c-header-toggler c-class-toggler mfe-md-3" type="button" data-target="#aside" data-class="c-sidebar-show">
-            <svg class="c-icon c-icon-lg">
-                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-applications-settings"></use>
-            </svg>
+        <button class="c-header-toggler c-class-toggler mfe-md-3" type="button" data-target="#aside" data-class="c-sidebar-show"> 
+            <i class="c-sidebar-nav-icon fas fa-ellipsis-v"></i>
         </button>
     </ul>
-    <div class="c-subheader justify-content-between px-3">
-
-        <ol class="breadcrumb border-0 m-0 px-0 px-md-3">
-            <li class="breadcrumb-item">Home</li>
-            <li class="breadcrumb-item"><a href="#">Admin</a></li>
-            <li class="breadcrumb-item active">Dashboard</li>
-
-        </ol>
-        <div class="c-subheader-nav d-md-down-none mfe-2"><a class="c-subheader-nav-link" href="#">
-                <svg class="c-icon">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-speech"></use>
-                </svg></a><a class="c-subheader-nav-link" href="#">
-                <svg class="c-icon">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-graph"></use>
-                </svg> &nbsp;Dashboard</a><a class="c-subheader-nav-link" href="#">
-                <svg class="c-icon">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-settings"></use>
-                </svg> &nbsp;Settings</a></div>
-    </div>
 </header>

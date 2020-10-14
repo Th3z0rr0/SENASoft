@@ -2,9 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
-use App\Http\Controllers\VendorController;
 use App\Http\Controllers\admin\AdminController;
-use App\Http\Controllers\Operator\OperatorController;
+use App\Http\Controllers\operator\OperatorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +24,7 @@ Route::get('servicios',[LandingController::class,'servicios'])->name('landing.se
 
 
 Route::get('index',[AdminController::class,'index'])->name('Admin.index');
+Route::get('view',[AdminController::class,'view'])->name('Admin.view');
 Route::get('Create',[AdminController::class,'create'])->name('Admin.create');
 
 Route::get('generarventas',[VendorController::class,'generarventas'])->name('landing.generarventas');
@@ -36,3 +36,5 @@ Route::post('productos',[VendorController::class,'ingreso'])->name('recordar');
 
 
 Route::get('Operator',[OperatorController::class,'index'])->name('Operator.index');
+Route::get('NewProduct',[LandingController::class,'newproduct'])->name('landing.newproduct');
+Route::get('EditProduct',[LandingController::class,'editproduct'])->name('landing.editproduct');

@@ -1,7 +1,8 @@
 @extends('layouts.users.app')
 @section('content')
     <h1>Estas en la pagina de Operario</h1>
-    <button class="btn btn-success " type="button">Crear Nuevo producto</button>
+    
+<a class="btn btn-success text-white" href="{{route('landing.newproduct')}}"type="button">Crear Nuevo producto</a>
     <div class="row pt-3">
         <div class="col-lg-12">
         <div class="card">
@@ -27,7 +28,7 @@
         <td>50cm*40cm</td>
         <td>
 
-                <button class="btn btn-warning btn-sm" type="button">Editar</button>
+                <a class="btn btn-warning btn-sm" type="button">Editar</a>
              
                 <button class="btn  btn-danger btn-sm " type="button">Eliminar</button>
             
@@ -41,7 +42,7 @@
         <td>60cm*20cm</td>
         <td>
 
-            <button class="btn btn-warning btn-sm" type="button">Editar</button>
+            <a class="btn btn-warning btn-sm" type="button">Editar</a>
          
             <button class="btn  btn-danger btn-sm " type="button">Eliminar</button>
         
@@ -55,7 +56,7 @@
         <td>70cm*50cm</td>
         <td>
 
-            <button class="btn btn-warning btn-sm" type="button">Editar</button>
+            <a class="btn btn-warning btn-sm" type="button">Editar</a>
          
             <button class="btn  btn-danger btn-sm " type="button">Eliminar</button>
         
@@ -69,7 +70,7 @@
         <td>4cm*3mm</td>
         <td>
 
-            <button class="btn btn-warning btn-sm" type="button">Editar</button>
+            <a class="btn btn-warning btn-sm" type="button">Editar</a>
          
             <button class="btn  btn-danger btn-sm " type="button">Eliminar</button>
         
@@ -81,13 +82,7 @@
         <td>30000</td>
         <td>2000</td>
         <td>50cm*2cm</td>
-        <td>
-
-            <button class="btn btn-warning btn-sm" type="button">Editar</button>
-         
-            <button class="btn  btn-danger btn-sm " type="button">Eliminar</button>
         
-        </td>
         </tr>
         </tbody>
         </table>

@@ -8,18 +8,29 @@
         </svg>
     </div>
     <ul class="c-sidebar-nav">
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="index.html">
-
-                <i class="c-sidebar-nav-icon fas fa-desktop"></i>
-                Dashboard<span class="badge badge-info">NEW</span></a></li>
-
+        <li class="c-sidebar-nav-title">Theme</li>
+        <li class="c-sidebar-nav-item">
+            <a class="c-sidebar-nav-link" href="#">
+                <i class="c-sidebar-nav-icon fas fa-store"></i>
+                Sucursales
+            </a>
+        </li>
+         <li class="c-sidebar-nav-item">
+             <a class="c-sidebar-nav-link" href="#">
+                <i class="c-sidebar-nav-icon fas fa-industry"></i>
+                Bodegas
+                {{-- <span class="badge badge-info">NEW</span> --}}
+            </a>
+        </li>
 
         <li class="c-sidebar-nav-dropdown"><a class="c-sidebar-nav-dropdown-toggle" href="#">
-                <svg class="c-sidebar-nav-icon">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-puzzle"></use>
-                </svg> Base</a>
+
+            <i class="c-sidebar-nav-icon fas fa-boxes"></i>
+            productos</a>
             <ul class="c-sidebar-nav-dropdown-items">
-                <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/breadcrumb.html"> Breadcrumb</a></li>
+                <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/breadcrumb.html"> Productos totales</a></li>
+                <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/breadcrumb.html"> Productos por Bodegas</a></li>
+
 
             </ul>
         </li>
