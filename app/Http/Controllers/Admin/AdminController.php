@@ -16,9 +16,21 @@ class AdminController extends Controller
     {
         return view('Admin.index');
     }
-    public function view()
+    public function view_branch()
     {
-        return view('Admin.view');
+        return view('Admin.view_branch');
+    }
+    public function view_store()
+    {
+        return view('Admin.view_store');
+    }
+    public function view_products()
+    {
+        return view('Admin.view_products');
+    }
+    public function view_products_store()
+    {
+        return view('Admin.view_products_store');
     }
 
     /**

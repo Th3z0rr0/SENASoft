@@ -1,4 +1,4 @@
-@extends('layouts.users_admin.app')
+@extends('Admin.users.app')
 @section('content')
     <h1>Estas en la pagina de Administrador</h1>
     <a href="/">Ir a welcome</a>

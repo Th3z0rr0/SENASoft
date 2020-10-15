@@ -5,7 +5,7 @@
 <div class="container-fluid">
 <div class="fade-in">
 <div class="card">
-<div class="card-header">Sucursales</div>
+<div class="card-header">Productos por bodega</div>
 <div class="card-body">
 <table class="table table-striped table-bordered datatable">
 <thead>
