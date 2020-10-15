@@ -47,8 +47,12 @@ Route::post('productos',[VendorController::class,'ingreso'])->name('recordar');
 
 Route::get('Operator',[OperatorController::class,'index'])->name('Operator.index');
 Route::get('NewProduct',[LandingController::class,'newproduct'])->name('landing.newproduct');
-Route::get('EditProduct',[LandingController::class,'editproduct'])->name('landing.editproduct');
+Route::get('EditProduct/{id}',[OperatorController::class,'editproduct'])->name('edit.product');
 
+Route::post('NewProduct',[OperatorController::class,'store'])->name('create.product');
+
+Route::put('updateProduct/{id}',[OperatorController::class,'update'])->name('update.product');
+Route::delete('Operator/{id}',[OperatorController::class,'destroy'])->name('operator.delete');
 
 
 
