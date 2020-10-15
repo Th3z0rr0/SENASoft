@@ -1,3 +1,7 @@
+@extends('Operator.app')
+@section('content')
+    
+
 <div class="col-bg-6">
     <div class="card">
     <div class="card-header"><strong>Editar producto</strong></div>
@@ -28,3 +32,5 @@
     </div>
     
     </div>
+
+@endsection    

@@ -1,4 +1,4 @@
-@extends('layouts.users.app')
+@extends('Operator.app')
 @section('content')
     <h1>Estas en la pagina de Operario</h1>
     
