@@ -24,6 +24,14 @@ class AdminController extends Controller
     {
         return view('Admin.view_store');
     }
+    public function create_branch()
+    {
+        return view('Admin.create_branch');
+    }
+    public function create_store()
+    {
+        return view('Admin.create_store');
+    }
     public function view_products()
     {
         return view('Admin.view_products');
@@ -31,6 +39,14 @@ class AdminController extends Controller
     public function view_products_store()
     {
         return view('Admin.view_products_store');
+    }
+    public function view_workers()
+    {
+        return view('Admin.view_workers');
+    }
+    public function create_workers()
+    {
+        return view('Admin.create_workers');
     }
 
     /**

@@ -16,13 +16,7 @@
                 Crear Producto
             </a>
         </li>
-         <li class="c-sidebar-nav-item">
-         <a class="c-sidebar-nav-link" href="{{route('landing.editproduct')}}">
-                <i class="c-sidebar-nav-icon fas fa-edit"></i>
-                Editar producto
-                {{-- <span class="badge badge-info">NEW</span> --}}
-            </a>
-        </li>
+         
         
         
 

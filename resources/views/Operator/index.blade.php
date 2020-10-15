@@ -15,76 +15,32 @@
         <th>Descripcion</th>
         <th>Precio</th>
         <th>Cantidad</th>
-        <th>Dimensiones</th>
+        
         <th>Acciones</th>
         </tr>
         </thead>
+        @foreach ($products as $product)
+            
+        
         <tbody>
         <tr>
-        <td>Juego de copas</td>
-        <td>Este juego de copas se usuara para los arreglos que necesites</td>
-        <td>50000</td>
-        <td>1000</td>
-        <td>50cm*40cm</td>
+        <td>{{$product->name}}</td>
+        <td>{{$product->description}}</td>
+        <td>{{$product->price}}</td>
+        <td>{{$product->quantity}}</td>
         <td>
+        <form action="{{route('operator.delete',$product->id)}}" method="POST">
+            @csrf
+            @method('DELETE')
 
-                <a class="btn btn-warning btn-sm" type="button">Editar</a>
+                <a href="{{route('edit.product',$product->id)}}" class="btn btn-warning btn-sm" >Editar</a>
              
-                <button class="btn  btn-danger btn-sm " type="button">Eliminar</button>
-            
+                <button class="btn  btn-danger btn-sm " type="submit">Eliminar</button>
+            </form>
         </td>
-        </tr>
-        <tr>
-        <td>Martillos</td>
-        <td>Estos martillos estan echos en acero resistente para una mayor resistencia</td>
-        <td>80000</td>
-        <td>300</td>
-        <td>60cm*20cm</td>
-        <td>
-
-            <a class="btn btn-warning btn-sm" type="button">Editar</a>
-         
-            <button class="btn  btn-danger btn-sm " type="button">Eliminar</button>
-        
-        </td>
-        </tr>
-        <tr>
-        <td>Ruedas de carro</td>
-        <td>Ruedas para rin de 21 pulgadas</td>
-        <td>150000</td>
-        <td>700</td>
-        <td>70cm*50cm</td>
-        <td>
-
-            <a class="btn btn-warning btn-sm" type="button">Editar</a>
-         
-            <button class="btn  btn-danger btn-sm " type="button">Eliminar</button>
-        
-        </td>       
-        </tr>
-        <tr>
-        <td>Tornillos</td>
-        <td>Tornillos de estrella para reparaciones caseras o uso industrial</td>
-        <td>4000</td>
-        <td>7000</td>
-        <td>4cm*3mm</td>
-        <td>
-
-            <a class="btn btn-warning btn-sm" type="button">Editar</a>
-         
-            <button class="btn  btn-danger btn-sm " type="button">Eliminar</button>
-        
-        </td>
-        </tr>
-        <tr>
-        <td>Destornilladores</td>
-        <td>Destornillador de pala paratornillos grandes</td>
-        <td>30000</td>
-        <td>2000</td>
-        <td>50cm*2cm</td>
-        
         </tr>
         </tbody>
+        @endforeach
         </table>
         <nav>
         <ul class="pagination">
