@@ -66,15 +66,15 @@
     <option value="pro1">Secador</option>
 </select>
 <br>
-<textarea class="form-control" name="" id="" cols="30" rows="3">Description</textarea>
-<br>    
-<label for="Precio">Precio</label>
-<label >_________</label>
+<TEXTarea class="form-control"></TEXTarea>
+<br>
+<label for="">Precio: </label>
+<label for="">________</label>
 </div>
-
-<button class="btn btn-primary" type="button" data-dismiss="modal">Cerrar</button>
-
-
+<div class="modal-footer">
+<button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+<button class="btn btn-primary" type="button">Save changes</button>
+</div>
 </div>
 
 </div>

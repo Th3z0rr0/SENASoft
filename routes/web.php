@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\operator\OperatorController;
-
+use App\Http\Controllers\VendorController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,3 +38,6 @@ Route::post('productos',[VendorController::class,'ingreso'])->name('recordar');
 Route::get('Operator',[OperatorController::class,'index'])->name('Operator.index');
 Route::get('NewProduct',[LandingController::class,'newproduct'])->name('landing.newproduct');
 Route::get('EditProduct',[LandingController::class,'editproduct'])->name('landing.editproduct');
+
+
+Route::get('correo',[VendorController::class,'correo'])->name('landing.correo');

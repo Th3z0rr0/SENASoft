@@ -27,7 +27,7 @@
 
 
 <div class="c-wrapper">
-    @include('vendor.componets.navbar')
+    @include('layouts.users.components.navbar')
     <div class="c-body">
         <main class="c-main">
             <div class="container-fluid">

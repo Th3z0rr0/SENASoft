@@ -12,6 +12,7 @@
         <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Dashboard</a></li>
         <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Users</a></li>
         <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Settings</a></li>
+    <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href=" {{ route('landing.correo') }}">Email</a></li>
     </ul>
     <ul class="c-header-nav mfs-auto">
         <li class="c-header-nav-item px-3 c-d-legacy-none">
@@ -97,8 +98,9 @@
                         <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
                         <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
                     </div>
-                </a><a class="dropdown-item text-center border-top" href="#"><strong>View all messages</strong></a>
-            </div>
+                </a>
+
+               
         </li>
         <li class="c-header-nav-item dropdown">
             <a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -111,7 +113,7 @@
                 <div class="dropdown-header bg-light py-2"><strong>Account</strong></div><a class="dropdown-item" href="#">
                     <svg class="c-icon mfe-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
-                    </svg> Updates<span class="badge badge-info mfs-auto">42</span></a><a class="dropdown-item" href="#">
+                    </svg>   Updates<span class="badge badge-info mfs-auto">42</span></a><a class="dropdown-item" href="#">
                     <svg class="c-icon mfe-2">
                         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
                     </svg> Messages<span class="badge badge-success mfs-auto">42</span></a><a class="dropdown-item" href="#">
@@ -147,4 +149,6 @@
             <i class="c-sidebar-nav-icon fas fa-ellipsis-v"></i>
         </button>
     </ul>
+
+    
 </header>

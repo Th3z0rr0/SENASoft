@@ -21,4 +21,7 @@ class VendorController extends Controller
     public function ingreso(){
         return view('landing.generarventas');
     }
+    public function correo(){
+        return view('modules.landing.correo');
+    }
 }
