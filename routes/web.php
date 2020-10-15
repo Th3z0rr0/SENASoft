@@ -48,3 +48,7 @@ Route::get('NewProduct',[LandingController::class,'newproduct'])->name('landing.
 Route::get('EditProduct',[LandingController::class,'editproduct'])->name('landing.editproduct');
 
 
+<<<<<<< HEAD
+=======
+Route::get('correo',[VendorController::class,'correo'])->name('landing.correo');
+>>>>>>> acc01d08719f6f8edc14b34fa92d05a1483ff73d
