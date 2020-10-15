@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Mail\CorreoMailable;
+
+
+use Illuminate\Support\Facades\Mail;
 
 class VendorController extends Controller
 {
@@ -23,5 +27,19 @@ class VendorController extends Controller
     }
     public function correo(){
         return view('modules.landing.correo');
+    }
+    public function contactos(Request $request){
+
+        $asuntos = $request->all();
+  
+
+  
+  
+  
+  
+  
+  //      return redirect('emails.contactanos',compact('asunto'));
+         return view('emails.contactanos',compact('asuntos'));
+
     }
 }

@@ -6,7 +6,9 @@
     <div class="card">
     <div class="card-header"><strong>Enviar Correo</strong> </div>
     <div class="card-body">
-        <form>
+    <form action="{{route('landing.contacto')}}" method="post">
+        @csrf
+        
             <div class="form-group row">
               <label for="staticEmail" class="col-sm-2 col-form-label">Para : </label>
               <div class="col-sm-10">
@@ -16,13 +18,13 @@
             <div class="form-group row">
               <label for="inputPassword" class="col-sm-2 col-form-label">Asunto</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" >
+                <input type="text" class="form-control" name="asunto" >
               </div>
             </div>
             <div class="form-group row">
                 <label for="inputPassword" class="col-sm-2 col-form-label">Mensaje</label>
                 <div class="col-sm-10">
-            <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>  
+            <textarea class="form-control" name="descripcion" id="" cols="30" rows="10"></textarea>  
                 </div>
               </div>
 
