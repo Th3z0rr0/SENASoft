@@ -22,9 +22,6 @@
         gtag('config', 'UA-118965717-1');
     </script></head>
 <body class="c-app">
-@include('layouts.users.components.sidebar')
-
-@include('layouts.users.components.aside')
 
 
 <div class="c-wrapper">

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\operator\OperatorController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\VendorController;
 use App\Mail\CorreoMailable;
 
@@ -27,6 +28,8 @@ Route::get('acercade',[LandingController::class,'acercade'])->name('landing.acer
 Route::get('servicios',[LandingController::class,'servicios'])->name('landing.servicios');
 
 
+Route::get('Auth/login',[LoginController::class,'Auth_login'])->name('Auth.login');
+Route::get('Auth/register',[LoginController::class,'Auth_register'])->name('Auth.register');
 
 Route::get('Admin/index',[AdminController::class,'index'])->name('Admin.index');
 Route::get('Admin/view_branch',[AdminController::class,'view_branch'])->name('Admin.view_branch');
@@ -50,6 +53,7 @@ Route::get('EditProduct',[LandingController::class,'editproduct'])->name('landin
 
 
 
+
 Route::get('correo',[VendorController::class,'correo'])->name('landing.correo');
 Route::post('correo',[VendorController::class,'contactos'])->name('landing.contacto');
 Route::get('contactanos',function(){
@@ -64,3 +68,6 @@ Route::get('contactanos',function(){
 Route::get('emails.contactanos', function () {
     return view('contactanos');
 });
+
+Route::get('correo',[VendorController::class,'correo'])->name('landing.correo');
+
