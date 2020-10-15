@@ -10,16 +10,15 @@ use Illuminate\Queue\SerializesModels;
 class CorreoMailable extends Mailable
 {
     use Queueable, SerializesModels;
-    public $asunto = "informacion de contacto";
-    public $descripcion = "informacion de contacto";
+    public $datos ;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($datos)
     {
-    
+        $this->datos = $datos;
     }
 
     /**

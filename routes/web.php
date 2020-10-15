@@ -6,10 +6,8 @@ use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\operator\OperatorController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\VendorController;
-use App\Mail\CorreoMailable;
 
 
-use Illuminate\Support\Facades\Mail;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -55,19 +53,10 @@ Route::get('EditProduct',[LandingController::class,'editproduct'])->name('landin
 
 
 Route::get('correo',[VendorController::class,'correo'])->name('landing.correo');
-Route::post('correo',[VendorController::class,'contactos'])->name('landing.contacto');
-Route::get('contactanos',function(){
+Route::get('envio',[VendorController::class,'envio'])->name('landing.envio');
 
-        $correo = new CorreoMailable;
-        Mail::to('andrescristancho46@gmail.com')->send($correo);
-
-        return "mensaje enviado";
+//Route::post('correo',[VendorController::class,'contactos'])->name('landing.contacto');
 
 
-})->name('contactanos');
-Route::get('emails.contactanos', function () {
-    return view('contactanos');
-});
 
-Route::get('correo',[VendorController::class,'correo'])->name('landing.correo');
 

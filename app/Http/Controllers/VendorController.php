@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Mail\CorreoMailable;
 
 
+
 use Illuminate\Support\Facades\Mail;
 
 class VendorController extends Controller
@@ -28,18 +29,22 @@ class VendorController extends Controller
     public function correo(){
         return view('modules.landing.correo');
     }
-    public function contactos(Request $request){
+    public function envio(Request $request){
 
-        $asuntos = $request->all();
-  
+        $this->validate($request, [
+            'email'     =>  'required|email',
+            'asunto'  =>  'required',
+            'descripcion' =>  'required'
+           ]);
+           
+         $datos = array(
+              'email'      =>  $request->input('email'),
+              'descripcion'   =>   $request->input('descripcion')
+          );
+      
+          $email = $request->input('email');
 
-  
-  
-  
-  
-  
-  //      return redirect('emails.contactanos',compact('asunto'));
-         return view('emails.contactanos',compact('asuntos'));
-
+        Mail::to($email)->send(new CorreoMailable($datos));
+        return "se envio exitosamentes";
     }
 }

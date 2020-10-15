@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    @foreach($asuntos[0] as $hola)
-    
-
-<strong>Asunto:  </strong>{{ $hola }}<br>
-<p>{{$hola}}</p>@endforeach
-</body>
+<html>
+ <head>
+  <title>Message</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+  <!-- Styles -->
+  <style>
+      html, body {
+          background-color: #fff;
+          color: #636b6f;
+          font-family: 'Nunito', sans-serif;
+          font-weight: 200;
+          height: 100vh;
+          margin: 0;
+      }
+      .content { text-align: center; }
+      .title { font-size: 84px; }
+  </style>
+ </head>
+ <body>
+  <br />
+  <div class="container box" style="width: 970px;">
+   <h1 style="text-align:center;"> {{ $datos['email'] }} </h1>
+   <h3 align="center">{{ $datos['descripcion'] }}</h3>
+  </div>
+ </body>
 </html>
