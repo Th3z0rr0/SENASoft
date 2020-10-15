@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\Company\Company;
+use Illuminate\Support\Facades\Redirect;
 
 class LoginController extends Controller
 {
@@ -11,9 +14,74 @@ class LoginController extends Controller
     {
         return view('Auth.login');
     }
-    public function Auth_register()
+    public function Auth_register_company()
     {
-        return view('Auth.register');
+        return view('Auth.register_company');
+    }
+    public function Auth_store_company(Request $request)
+    {
+        $company = new Company();
+        $company -> company_name = $request->company_name;
+        $company -> nit = $request->nit;
+        $company-> save();
+
+        return redirect()->route('Auth.register', $company);
+    }
+    public function Auth_register($id)
+    {
+        $company = Company::find($id);
+        return view('Auth.Auth_store_user');
+    }
+    public function Auth_store_user(Request $request)
+    {
+        
+        $user = new User();
+        $user -> indentificacion = $request->indentificacion;
+        $user -> name = $request->name;
+        $user -> lastname = $request->lastname;
+        $user -> email = $request->email;
+        $user -> pasword = $request->pasword;
+        $user -> rol = $request->rol;
+        $user -> company_id = $request->company_id;
+        $user-> save();
+        
+
+    }
+    public function Auth_Auth(Request $request)
+    {   $user=User::where('email','=',$request->input('email'))->first();
+        if($user){
+            
+            if ($user->password==$request->input('password')) {
+                if ($user->rol_id==1) {
+
+                    SESSION(['USER_SESSION'=>$user]);
+                    return redirect()->route('Index');
+
+                }elseif($user->rol_id==2){
+
+                    SESSION(['USER_SESSION'=>$user]);
+                    return redirect()->route('Admin.index');
+
+                }elseif($user->rol_id==3){
+
+                    SESSION(['USER_SESSION'=>$user]);
+                    return redirect()->route('Index');
+
+                }elseif($user->rol_id==4){
+
+                    SESSION(['USER_SESSION'=>$user]);
+                    return redirect()->route('Index');
+
+                }else{
+                    return view('Auth.login');
+                }
+            }else{
+                return view('Auth.login');
+        }
+
+        }else{
+            return view('Auth.login');
     }
 
+}
 }
