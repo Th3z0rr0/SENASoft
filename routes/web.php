@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\operator\OperatorController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\VendorController;
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,8 @@ Route::get('acercade',[LandingController::class,'acercade'])->name('landing.acer
 Route::get('servicios',[LandingController::class,'servicios'])->name('landing.servicios');
 
 
+Route::get('Auth/login',[LoginController::class,'Auth_login'])->name('Auth.login');
+Route::get('Auth/register',[LoginController::class,'Auth_register'])->name('Auth.register');
 
 Route::get('Admin/index',[AdminController::class,'index'])->name('Admin.index');
 Route::get('Admin/view_branch',[AdminController::class,'view_branch'])->name('Admin.view_branch');
@@ -43,4 +46,5 @@ Route::post('productos',[VendorController::class,'ingreso'])->name('recordar');
 Route::get('Operator',[OperatorController::class,'index'])->name('Operator.index');
 Route::get('NewProduct',[LandingController::class,'newproduct'])->name('landing.newproduct');
 Route::get('EditProduct',[LandingController::class,'editproduct'])->name('landing.editproduct');
+
 
