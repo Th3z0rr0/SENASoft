@@ -25,27 +25,31 @@ class LoginController extends Controller
         $company -> nit = $request->nit;
         $company-> save();
 
-        return redirect()->route('Auth.register', $company);
+        return redirect()->route('Auth.register', ['id' =>$company->id]);
     }
-    public function Auth_register($id)
+    public function Auth_register()
     {
-        $company = Company::find($id);
-        return view('Auth.Auth_store_user');
+        $company = Company::find(5);
+        return view('Auth.register');
     }
     public function Auth_store_user(Request $request)
     {
         
         $user = new User();
-        $user -> indentificacion = $request->indentificacion;
+        $user -> identificacion = $request->identificacion;
         $user -> name = $request->name;
         $user -> lastname = $request->lastname;
         $user -> email = $request->email;
-        $user -> pasword = $request->pasword;
-        $user -> rol = $request->rol;
+        $user -> password = $request->password;
+        $user -> rol_id = $request->rol;
         $user -> company_id = $request->company_id;
-        $user-> save();
+        $user -> save();
         
+        return view('Auth.login');
 
+    }
+    public function Auth_logout(Request $request){
+        $request->session()->forget('mensaje');
     }
     public function Auth_Auth(Request $request)
     {   $user=User::where('email','=',$request->input('email'))->first();
