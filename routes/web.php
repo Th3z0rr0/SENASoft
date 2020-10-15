@@ -23,9 +23,14 @@ Route::get('acercade',[LandingController::class,'acercade'])->name('landing.acer
 Route::get('servicios',[LandingController::class,'servicios'])->name('landing.servicios');
 
 
-Route::get('index',[AdminController::class,'index'])->name('Admin.index');
-Route::get('view',[AdminController::class,'view'])->name('Admin.view');
-Route::get('Create',[AdminController::class,'create'])->name('Admin.create');
+
+Route::get('Admin/index',[AdminController::class,'index'])->name('Admin.index');
+Route::get('Admin/view_branch',[AdminController::class,'view_branch'])->name('Admin.view_branch');
+Route::get('Admin/view_store',[AdminController::class,'view_store'])->name('Admin.view_store');
+Route::get('Admin/Create',[AdminController::class,'create'])->name('Admin.create');
+Route::get('Admin/view_products',[AdminController::class,'view_products'])->name('Admin.view_products');
+Route::get('Admin/view_products_store',[AdminController::class,'view_products_store'])->name('Admin.view_products_store');
+
 
 Route::get('generarventas',[VendorController::class,'generarventas'])->name('landing.generarventas');
 Route::get('generarfactura',[VendorController::class,'generarfactura'])->name('landing.generarfactura');
