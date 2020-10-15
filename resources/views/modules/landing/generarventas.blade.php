@@ -21,16 +21,16 @@
             </div>
             <div class="form-group col-sm-6">
             <label for="Cantidad">Cantidad</label>
-            <input  value="{{old('cantidad')}}" class="form-control" id="postal-code" type="number" name="cantidad" placeholder="cant..">
+            <input   class="form-control"  id="postal-code" type="number" name="quantity" placeholder="cant..">
             </div>
             </div> <div class="row">
                 <div class="form-group col-sm-6">
                 <label for="Fecha">Fecha</label>
-                <input class="form-control"  name="fecha" type="date" name="fecha">
+                <input class="form-control"  name="date" type="date" name="fecha">
                 </div>
                 <div class="form-group col-sm-6">
                 <label for="Precio unidad">Precio unidad</label>
-                <input class="form-control" name="pre_uni"  type="text">
+                <input class="form-control" name="price"  type="number">
                 </div>
                 </div>
                 <div class="row">
@@ -40,17 +40,14 @@
                     </div>
                     <div class="form-group col-sm-6">
                     <label for="IVA">IVA</label>
-                    <input class="form-control" name="iva" type="text" placeholder="19%" disabled>
+                    <input class="form-control" name="iva" type="number" placeholder="19%">
                     </div>
                     </div>
     <div class="row">
-    <div class="form-group col-sm-6">
-    <label for="descripcion">Descripcion</label>
-    <textarea name="descripcion" class="form-control" id="" cols="30" rows="3"></textarea>
-    </div>
-    <div class="form-group col-sm-6">
+    
+    <div class="form-group col-sm-6 float-right">
     <label for="total">Total</label>
-    <input class="form-control" id="postal-code" type="text" placeholder="2000" name="total" disabled>
+    <input class="form-control " id="postal-code" type="text" placeholder="2000" name="total" >
     </div>
     <div class="form-group col-sm-12">
         <input type="submit" class="btn btn-success float-right"value="ENVIAR">

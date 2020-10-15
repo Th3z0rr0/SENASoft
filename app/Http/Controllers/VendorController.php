@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Mail\CorreoMailable;
-
+use App\Models\Ventas;
 
 
 use Illuminate\Support\Facades\Mail;
@@ -15,16 +15,19 @@ class VendorController extends Controller
         return view('modules.landing.generarventas');
     }
     public function generarfactura(){
-        return view('modules.landing.generarfactura');
+        $ventas = Ventas::all();
+        return view('modules.landing.generarfactura',compact('ventas'));
     }
     public function detallesfactura(){
-        return view('modules.landing.detallesfactura');
+      
+      return view('modules.landing.detallesfactura');
     }
     public function productos(){
         return view('modules.landing.productos');
     }
-    public function ingreso(){
-        return view('landing.generarventas');
+    public function ingreso(Request $request){
+        $ventas = Ventas::create($request->all());
+        return redirect('generarfactura');
     }
     public function correo(){
         return view('modules.landing.correo');

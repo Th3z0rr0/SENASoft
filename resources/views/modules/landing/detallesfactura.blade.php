@@ -71,7 +71,9 @@
     <div class="form-group col-sm-6">
     <label for="total">Total</label>
 <label name="total"></label>    </div>
+
     <div class="form-group col-sm-12">
+        <a href=""  class="btn btn-danger float-left position-absolute"> Cancelar</a>
         <input type="submit" class="btn btn-success float-right"value="Descargar PDF">
         </div>
     </div>

@@ -15,33 +15,21 @@
     <th>Detalles</th>
     </tr>
     </thead>
+    
+
+    @foreach ($ventas as $venta)
+        
+   <tr>
+    <td>{{ $venta->id}}</td>
+    <td> {{ $venta->product}} </td>
+    
+    <td> {{ $venta->created_at}}</td>
+   <td> <a href="{{ route('landing.detallesfactura')}}">{{"detalles"}}</a></td>
+</tr>
+     @endforeach
     <tbody>
     <tr>
-    <td>Yiorgos Avraamu</td>
-    <td>2012/01/01</td>
-    <td>Member</td>
-    <td><a href="{{route('landing.detallesfactura')}}"><span class="badge badge-secondary">Detalles</span></a></td>
-    </tr>
-    <tr>
-    <td>Avram Tarasios</td>
-    <td>2012/02/01</td>
-    <td>Staff</td>
-    <td><a href=""><span class="badge badge-secondary">Detalles</span></a></td>    </tr>
-    <tr>
-    <td>Quintin Ed</td>
-    <td>2012/02/01</td>
-    <td>Admin</td>
-    <td><a href=""><span class="badge badge-secondary">Detalles</span></a></td>    </tr>
-    <tr>
-    <td>Enéas Kwadwo</td>
-    <td>2012/03/01</td>
-    <td>Member</td>
-    <td><a href=""><span class="badge badge-secondary">Detalles</span></a></td>    </tr>
-    <tr>
-    <td>Agapetus Tadeáš</td>
-    <td>2012/01/21</td>
-    <td>Staff</td>
-    <td><a href=""><span class="badge badge-secondary">Detalles</span></a></td>    </tr>
+    
     </tbody>
     </table>
     <ul class="pagination">
@@ -57,6 +45,5 @@
     </div>
     
 
-    
 
     @endsection
